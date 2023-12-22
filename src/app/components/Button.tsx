@@ -6,11 +6,13 @@ const buttonVariants = tv({
   variants: {
     size: {
       default: "p-3 h-15 px-4 w-full font-medium",
-      google: 'p-3 h-12 px-4 w-full font-medium'
+      google: 'p-3 h-12 px-4 w-full font-medium',
+      chip: 'p-2 h-10 w-56 font-medium'
     },
     color: {
       default: "bg-white text-black",
-      google: "bg-sky-700 text-white"
+      google: "bg-sky-700 text-white",
+      chip: "bg-[#303030] text-white"
     }
   },
   defaultVariants: {
