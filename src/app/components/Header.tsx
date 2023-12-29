@@ -1,14 +1,15 @@
+import { Bell, CircleUser } from "lucide-react";
+
 import Image from "next/image";
 
 export function Header() {
   return (
     <header className="w-full flex h-auto items-center justify-between px-8 py-1">
-      <div className="flex items-center justify-center">
-        <Image src='/logo.png' height={170} width={170} alt="Website Logo"/>
+      <div className="flex items-center">
+        <Image src='/logo.png' height={150} width={150} alt="Website Logo"/>
       </div>
-      <div className="flex flex-col">
-        <span className="text-sm font-light text-right">Seja bem vindo,</span>
-        <p className="text-xl font-bold text-right">Lucas Costa</p>
+      <div className="flex items-center gap-3">
+        <CircleUser />
       </div>
     </header>
   );

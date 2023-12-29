@@ -1,11 +1,17 @@
+import { Card } from "./Card";
 import { Info } from "./Info";
 
 export function BestSellers() {
   return (
     <>
-      <section className="py-10">
-        <Info title="Destaques" redirect="#"/>
+      <section className="pt-10 pb-5">
+        <Info title="Destaques" redirect="#" />
       </section>
+      <div className="flex gap-2 w-full overflow-x-auto no-scrollbar">
+        <Card />
+        <Card />
+        <Card />
+      </div>
     </>
   );
 }
