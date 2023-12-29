@@ -1,6 +1,7 @@
 "use client";
 
 import { Flame, Star } from "lucide-react";
+import Link from "next/link";
 
 interface ICardProps {
   typeBadge: "default" | "highlighted" | "bestseller";
@@ -8,7 +9,7 @@ interface ICardProps {
 
 export function Card({ typeBadge = "default" }: ICardProps) {
   return (
-    <div className="flex flex-col bg-white shadow-sm min-w-64 max-w-5min-w-64 rounded h-auto">
+    <Link href='/home/view/product/1' className="flex flex-col bg-white shadow-sm min-w-64 max-w-5min-w-64 rounded h-auto">
       <div className="flex items-center justify-center h-44 w-full relative">
         <img
           src="/pao.png"
@@ -32,6 +33,6 @@ export function Card({ typeBadge = "default" }: ICardProps) {
         <span className="text-gray-400 text-sm">Preço / unidade</span>
         <h2 className="text-xl text-[#EAA85C] font-medium">R$ 10.00</h2>
       </div>
-    </div>
+    </Link>
   );
 }
