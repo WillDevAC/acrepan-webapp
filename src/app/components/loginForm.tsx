@@ -6,13 +6,14 @@ import { useRouter } from "next/navigation";
 
 import { Button } from "./Button";
 import { Input } from "./Input";
+import Image from "next/image";
 
 export function LoginForm() {
   const router = useRouter();
 
   return (
     <div className="h-full flex flex-col items-center justify-center gap-7">
-      <h1 className="text-3xl font-bold">ACREPAN WEB APP</h1>
+      <Image src='/logo.png' height={350} width={350} alt="Website Logo"/>
       <Button color="google" size="google">
         Continuar com Google
       </Button>
