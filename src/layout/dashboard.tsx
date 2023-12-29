@@ -9,7 +9,7 @@ export function LayoutDashboard({ children }: LayoutDashboardProps) {
   return (
     <>
       <Header />
-      <div className="px-8">{children}</div>
+      <div className="px-4">{children}</div>
       <Menu/>
     </>
   );
