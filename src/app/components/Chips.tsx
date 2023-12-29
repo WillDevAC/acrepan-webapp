@@ -5,8 +5,8 @@ export function Chips() {
   return (
     <>
       <Chip label="Principal" />
-      <Chip label="Atacado" />
-      <Chip label="Varejo" />
+      <Chip label="Pães" />
+      <Chip label="Bolos" />
     </>
   );
 }

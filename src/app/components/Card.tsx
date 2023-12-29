@@ -1,13 +1,23 @@
-'use client'
+"use client";
 
 export function Card() {
   return (
-    <div className="flex bg-white shadow-sm min-w-72 max-w-72 rounded h-72">
+    <div className="flex flex-col bg-white shadow-sm min-w-64 max-w-5min-w-64 rounded h-auto">
       <div className="flex items-center justify-center h-44 w-full relative">
-        <img src="/pao.png" className="object-contain w-full h-full p-5 mt-20 bg-white" />
-        <div className="absolute flex top-0 left-0 m-3 p-1 bg-green-50 text-green-500 font-medium">
-          EM DESTAQUE
+        <img
+          src="/pao.png"
+          className="object-contain w-full h-full p-5 mt-20 bg-white"
+        />
+        <div className="absolute flex items-center rounded justify-center top-0 left-0 m-3 p-2 w-36 bg-green-50 text-green-500 font-medium">
+          Em destaque
         </div>
+      </div>
+      <div className="flex pt-10 pl-5">
+        <h1 className="text-black font-bold text-xxl">PÃO FRANCÊS</h1>
+      </div>
+      <div className="flex flex-col pt-5 pb-3 pl-5">
+        <span className="text-gray-400 text-sm">Preço / unidade</span>
+        <h2 className="text-xl text-[#EAA85C] font-medium">R$ 10.00</h2>
       </div>
     </div>
   );
