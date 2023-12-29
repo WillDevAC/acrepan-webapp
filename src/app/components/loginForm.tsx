@@ -13,7 +13,7 @@ export function LoginForm() {
 
   return (
     <div className="h-full flex flex-col items-center justify-center gap-7">
-      <Image src='/logo.png' height={350} width={350} alt="Website Logo"/>
+      <Image src='/logo.png' height={280} width={280} alt="Website Logo"/>
       <Button color="google" size="google">
         Continuar com Google
       </Button>
