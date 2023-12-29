@@ -8,9 +8,9 @@ export function Highlighted() {
         <Info title="Destaques" redirect="#" />
       </section>
       <div className="flex gap-2 w-full overflow-x-auto no-scrollbar">
-        <Card />
-        <Card />
-        <Card />
+        <Card typeBadge="highlighted" />
+        <Card typeBadge="highlighted" />
+        <Card typeBadge="highlighted" />
       </div>
     </>
   );

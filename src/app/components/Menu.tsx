@@ -1,6 +1,6 @@
 "use client";
 
-import { Archive, BadgePercent, Home, LogOut, User } from "lucide-react";
+import { Archive, BadgePercent, Home, LogOut, ShoppingCart, User } from "lucide-react";
 
 import Link from "next/link";
 
@@ -21,8 +21,8 @@ export function Menu() {
           <p className="text-sm">Clube</p>
         </Link>
         <Link className="flex flex-col gap-1 items-center justify-center" href='#'>
-          <LogOut size={20}/>
-          <p className="text-sm">Sair</p>
+          <ShoppingCart size={20}/>
+          <p className="text-sm">Carrinho</p>
         </Link>
       </div>
     </>

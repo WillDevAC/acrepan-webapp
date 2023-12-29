@@ -8,9 +8,9 @@ export function BestSellers() {
         <Info title="Mais vendidos" redirect="#" />
       </section>
       <div className="flex gap-2 w-full overflow-x-auto no-scrollbar">
-        <Card />
-        <Card />
-        <Card />
+        <Card typeBadge="bestseller" />
+        <Card typeBadge="bestseller" />
+        <Card typeBadge="bestseller" />
       </div>
     </>
   );
