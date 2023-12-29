@@ -21,9 +21,9 @@ export function LoginForm() {
         <Input placeholder="Senha" type="password" />
       </form>
       <Button onClick={() => router.push("/home/all")}>Entrar</Button>
-      <section className="flex flex-col items-center justify-center w-full text-gray-300">
+      <section className="flex flex-col items-center justify-center w-full text-gray-500">
         <p>Não possui uma conta?</p>
-        <Link className="text-sm font-semibold text-gray-300" href="#">
+        <Link className="text-sm font-semibold text-gray-400" href="#">
           Cadastra-se
         </Link>
       </section>

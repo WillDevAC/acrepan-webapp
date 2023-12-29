@@ -12,10 +12,10 @@ export function Chip({ label }: ChipProps) {
 
   return (
     <div
-      className={`cursor-pointer inline-block px-4 py-2 rounded ${
+      className={`cursor-pointer border-[#e4e4e4] inline-block px-4 py-2 rounded font-semibold ${
         active
           ? "bg-[#EAA85C] text-black font-semibold"
-          : "bg-[#303030] text-white"
+          : "bg-[#ece8f0] text-black"
       }`}
     >
       {label}

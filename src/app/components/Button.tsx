@@ -10,7 +10,7 @@ const buttonVariants = tv({
       chip: 'p-2 h-10 w-56 font-medium'
     },
     color: {
-      default: "bg-white text-black",
+      default: "bg-[#EAA85C] text-black",
       google: "bg-sky-700 text-white",
       chip: "bg-[#303030] text-white"
     }

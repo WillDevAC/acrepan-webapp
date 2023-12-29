@@ -8,7 +8,7 @@ const inputVariants = tv({
       default: "py-3 px-5",
     },
     color: {
-      default: "bg-zinc-800",
+      default: "bg-gray-200",
     },
   },
   defaultVariants: {

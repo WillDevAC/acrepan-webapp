@@ -7,7 +7,7 @@ import Link from "next/link";
 export function Menu() {
   return (
     <>
-      <div className="fixed bottom-0 border border-t-zinc-700 border-b-black border-r-black border-l-black w-full h-auto py-3 flex items-center justify-between px-5">
+      <div className="fixed bg-white bottom-0 border  w-full h-auto py-3 flex items-center justify-between px-5">
         <Link className="flex flex-col gap-1 items-center justify-center" href='#'>
           <Home size={20}/>
           <p className="text-sm">Home</p>
