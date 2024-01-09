@@ -8,7 +8,7 @@ interface LayoutDashboardProps {
 export function LayoutDashboard({ children }: LayoutDashboardProps) {
   return (
     <>
-      <Header />
+      <Header type="default"/>
       <div className="px-4">{children}</div>
       <Menu/>
     </>
