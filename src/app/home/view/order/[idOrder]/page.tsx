@@ -1,5 +1,9 @@
+import { Header } from "@/app/components/Header";
+
 export default function ViewOrder() {
     return (
-      <h1>ViewOrder</h1>
+      <>
+        <Header type="back" isText="Meus pedidos"/>
+      </>
     );
   }

@@ -7,7 +7,7 @@ interface ICardProps {
   typeBadge: "default" | "highlighted" | "bestseller";
 }
 
-export function Card({ typeBadge = "default" }: ICardProps) {
+export function CardProduct({ typeBadge = "default" }: ICardProps) {
   return (
     <Link href='/home/view/product/1' className="flex flex-col bg-white shadow-sm min-w-64 max-w-5min-w-64 rounded h-auto">
       <div className="flex items-center justify-center h-44 w-full relative">

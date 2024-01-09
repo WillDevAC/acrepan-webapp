@@ -5,9 +5,10 @@ import Link from "next/link";
 
 interface IHeaderProps {
   type: "default" | "back";
+  isText?: string;
 }
 
-export function Header({ type = "default" }: IHeaderProps) {
+export function Header({ type = "default", isText }: IHeaderProps) {
   return (
     <>
       {type === "default" && (
@@ -21,9 +22,10 @@ export function Header({ type = "default" }: IHeaderProps) {
       </header>
       )}
       {type === "back" && (
-        <header className="w-full flex h-auto items-center justify-between px-4 py-5">
+        <header className="w-full flex h-auto items-center px-4 py-5">
         <Link href='/home/all' className="flex items-center gap-3">
           <ChevronLeft />
+          <p className="font-semibold text-lg">{ isText }</p>
         </Link>
       </header>
       )}

@@ -1,4 +1,4 @@
-import { Card } from "./Card";
+import { CardProduct } from "./CardProduct";
 import { Info } from "./Info";
 
 export function Highlighted() {
@@ -8,9 +8,9 @@ export function Highlighted() {
         <Info title="Destaques" redirect="#" />
       </section>
       <div className="flex gap-2 w-full overflow-x-auto no-scrollbar">
-        <Card typeBadge="highlighted" />
-        <Card typeBadge="highlighted" />
-        <Card typeBadge="highlighted" />
+        <CardProduct typeBadge="highlighted" />
+        <CardProduct typeBadge="highlighted" />
+        <CardProduct typeBadge="highlighted" />
       </div>
     </>
   );
