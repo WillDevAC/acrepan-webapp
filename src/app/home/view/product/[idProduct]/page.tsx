@@ -1,4 +1,4 @@
-import { AddCartFooter } from "@/app/components/AddCartFooter";
+import { AddCartFooter } from "@/app/components/AddCart";
 import { Header } from "@/app/components/Header";
 import { MessageSquareText } from "lucide-react";
 
@@ -7,7 +7,7 @@ import Image from "next/image";
 export default function ViewProductPage() {
   return (
     <>
-      <Header type="back" />
+      <Header type="back" isBackUrl="/home/all"/>
 
       <div className="pr-5 pl-5 h-36 flex items-center justify-center">
         <Image

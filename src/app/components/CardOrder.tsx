@@ -2,12 +2,12 @@
 
 import Link from "next/link";
 
-interface ICardOrder {
+interface ICardOrderProps {
   id: string;
   order: string;
   shippingMethod: string;
   total: string;
-  status: 'shipping' | 'arrived' | 'canceled';
+  status: "shipping" | "arrived" | "canceled" | "pending";
 }
 
 export function CardOrder({
@@ -16,12 +16,12 @@ export function CardOrder({
   shippingMethod,
   total,
   status,
-}: ICardOrder) {
+}: ICardOrderProps) {
   return (
     <>
       <Link
         className="bg-white flex flex-col h-auto p-3 gap-3 rounded"
-        href="#"
+        href="/home/view/order/1"
       >
         <p>
           Pedido <b>#{order}</b>
@@ -35,6 +35,11 @@ export function CardOrder({
           <span className="text-gray-400">R$ {total}</span>
         </div>
         <div className="flex">
+          {status === "pending" && (
+            <button className="h-10 rounded bg-slate-300 text-slate-500 font-medium flex w-full items-center justify-center">
+              Pendente
+            </button>
+          )}
           {status === "canceled" && (
             <button className="h-10 rounded bg-red-300 text-red-500 font-medium flex w-full items-center justify-center">
               Cancelado

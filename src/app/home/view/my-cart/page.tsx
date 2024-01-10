@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { Header } from "@/app/components/Header";
 import { Minus, Plus } from "lucide-react";
-import { FinishOrderFooter } from "@/app/components/FinishOrderFooter";
+import { FinishOrderFooter } from "@/app/components/FinishOrder";
 
 export default function CartPage() {
   const [cartItems, setCartItems] = useState([
@@ -27,7 +27,7 @@ export default function CartPage() {
 
   return (
     <>
-      <Header type="back" isText="Sacola de compras" />
+      <Header type="back" isText="Sacola de compras" isBackUrl="/home/all"/>
       <section className="flex flex-col w-full pr-5 gap-5 pl-5" id="itensCart">
         {cartItems.map((item, index) => (
           <div

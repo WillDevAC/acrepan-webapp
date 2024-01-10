@@ -1,14 +1,16 @@
-import { Bell, ChevronLeft, CircleUser } from "lucide-react";
+import { ChevronLeft, CircleUser } from "lucide-react";
 
 import Image from "next/image";
 import Link from "next/link";
 
+
 interface IHeaderProps {
   type: "default" | "back";
   isText?: string;
+  isBackUrl?: string;
 }
 
-export function Header({ type = "default", isText }: IHeaderProps) {
+export function Header({ type = "default", isText, isBackUrl='/home/all' }: IHeaderProps) {
   return (
     <>
       {type === "default" && (
@@ -16,14 +18,14 @@ export function Header({ type = "default", isText }: IHeaderProps) {
         <div className="flex items-center">
           <Image src="/logo.png" height={150} width={150} alt="Website Logo" />
         </div>
-        <div className="flex items-center gap-3">
+        <Link className="flex items-center gap-3" href='/home/view/my-profile'>
           <CircleUser />
-        </div>
+        </Link>
       </header>
       )}
       {type === "back" && (
         <header className="w-full flex h-auto items-center px-4 py-5">
-        <Link href='/home/all' className="flex items-center gap-3">
+        <Link href={isBackUrl} className="flex items-center gap-3">
           <ChevronLeft />
           <p className="font-semibold text-lg">{ isText }</p>
         </Link>

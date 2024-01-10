@@ -17,21 +17,21 @@ export function Menu() {
         </Link>
         <Link
           className="flex flex-col gap-1 items-center justify-center"
-          href="/home/orders"
+          href="/home/my-orders"
         >
           <Archive size={20} />
           <p className="text-sm">Pedidos</p>
         </Link>
         <Link
           className="flex flex-col gap-1 items-center justify-center"
-          href="/home/club"
+          href="/home/my-club"
         >
           <BadgePercent size={20} />
           <p className="text-sm">Clube</p>
         </Link>
         <Link
           className="flex flex-col gap-1 items-center justify-center"
-          href="/home/view/cart"
+          href="/home/view/my-cart"
         >
           <ShoppingCart size={20} />
           <p className="text-sm">Carrinho</p>
