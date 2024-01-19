@@ -5,8 +5,10 @@ import { Header } from "@/app/components/Sections/Header";
 import { Minus, Plus } from "lucide-react";
 import { FinishOrderFooter } from "@/app/components/Sections/FinishOrder";
 
+import Cookies from "js-cookie";
+
 export default function CartPage() {
-  const storedCart = JSON.parse(localStorage.getItem("cart") || "[]");
+  const storedCart = JSON.parse(Cookies.get("cart") || "[]");
   const [cartItems, setCartItems] = useState(storedCart);
   const [cartTotal, setCartTotal] = useState(0);
 
@@ -29,7 +31,7 @@ export default function CartPage() {
     updatedCart[index].total =
       updatedCart[index].price * updatedCart[index].quantity;
     setCartItems(updatedCart);
-    updateLocalStorage(updatedCart);
+    updateCookies(updatedCart);
   };
 
   const handleDecrement = (index: any) => {
@@ -48,11 +50,11 @@ export default function CartPage() {
     }
 
     setCartItems(updatedCart);
-    updateLocalStorage(updatedCart);
+    updateCookies(updatedCart);
   };
 
-  const updateLocalStorage = (cartData: any) => {
-    localStorage.setItem("cart", JSON.stringify(cartData));
+  const updateCookies = (cartData: any) => {
+    Cookies.set("cart", JSON.stringify(cartData));
   };
 
   return (

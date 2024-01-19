@@ -5,6 +5,8 @@ import { Minus, Plus } from "lucide-react";
 import { formatPrice } from "@/utils/functions";
 import { useRouter } from "next/navigation";
 
+import Cookies from "js-cookie";
+
 import { toast } from "sonner";
 
 interface IAddCartProps {
@@ -60,7 +62,7 @@ export function AddCart({
           : parseFloat(price) * quantityVarejo,
     };
 
-    const existingCartItems = JSON.parse(localStorage.getItem("cart") || "[]");
+    const existingCartItems = JSON.parse(Cookies.get("cart") || "[]");
 
     const existingItemIndex = existingCartItems.findIndex(
       (item: any) => item.id === idProduct && item.type === selectedItem
@@ -88,7 +90,7 @@ export function AddCart({
       existingCartItems.push(newCartItem);
     }
 
-    localStorage.setItem("cart", JSON.stringify(existingCartItems));
+    Cookies.set("cart", JSON.stringify(existingCartItems));
     router.replace("/home/view/my-cart");
     toast.success("Produto adicionado ao carrinho.");
   };
