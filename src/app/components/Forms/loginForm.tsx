@@ -90,7 +90,7 @@ export function LoginForm() {
       </Button>
       <section className="flex flex-col items-center justify-center w-full text-gray-500">
         <p>Não possui uma conta?</p>
-        <Link href="#" className="text-sm font-semibold text-gray-400">
+        <Link href="/register" className="text-sm font-semibold text-gray-400">
           Cadastra-se
         </Link>
       </section>

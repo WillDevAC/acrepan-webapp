@@ -9,14 +9,23 @@ export default function middleware(request: NextRequest) {
     if (request.nextUrl.pathname === "/") {
       return NextResponse.next();
     }
+
+    if (request.nextUrl.pathname === "/register") {
+      return NextResponse.next();
+    }
+
     return NextResponse.redirect(sign_url);
   }
 
   if (request.nextUrl.pathname === "/") {
     return NextResponse.redirect(home_url);
   }
+
+  if (request.nextUrl.pathname === "/register") {
+    return NextResponse.redirect(home_url);
+  }
 }
 
 export const config = {
-  matcher: ["/", "/home/:path*"],
+  matcher: ["/", "/register", "/home/:path*"],
 };

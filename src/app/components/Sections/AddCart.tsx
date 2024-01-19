@@ -141,7 +141,7 @@ export function AddCart({
         </>
       )}
       <button
-        className="bg-red-600 p-2 text-white w-28 rounded"
+        className="bg-[#EAA85C] p-2 text-black font-medium w-28 rounded"
         onClick={addToCart}
       >
         Adicionar
