@@ -1,19 +1,18 @@
 import { LayoutDashboard } from "@/layout/dashboard";
-import { Highlighted } from "@/app/components/Sections/Highlighteds";
 
 import { Chips } from "../../../components/Sections/Chips";
+import { Breads } from "@/app/components/Sections/Breads";
 import { Suspense } from "react";
-
 import { Loading } from "@/app/components/Loading";
 
-export default function DashboardPage() {
+export default function BreadsPage() {
   return (
     <LayoutDashboard>
       <div className="flex overflow-x-auto gap-5">
-        <Chips activeChip="principal"/>
+        <Chips activeChip="breads"/>
       </div>
       <Suspense fallback={<Loading/>}>
-        <Highlighted />
+        <Breads/>
       </Suspense>
     </LayoutDashboard>
   );

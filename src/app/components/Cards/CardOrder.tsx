@@ -21,7 +21,7 @@ export function CardOrder({
     <>
       <Link
         className="bg-white flex flex-col h-auto p-3 gap-3 rounded"
-        href="/home/view/order/1"
+        href={`/home/view/order/${id}`}
       >
         <p>
           Pedido <b>#{order}</b>

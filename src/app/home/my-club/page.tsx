@@ -1,4 +1,4 @@
-import { Header } from "@/app/components/Header";
+import { Header } from "@/app/components/Sections/Header";
 
 export default function OrdersPage() {
   return (

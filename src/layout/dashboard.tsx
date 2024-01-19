@@ -1,5 +1,6 @@
-import { Header } from "@/app/components/Header";
-import { Menu } from "@/app/components/Menu";
+import { Header } from "@/app/components/Sections/Header";
+import { Menu } from "@/app/components/Sections/Menu";
+
 
 interface LayoutDashboardProps {
   children: React.ReactNode;

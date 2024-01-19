@@ -1,5 +1,5 @@
-import { CardOrder } from "@/app/components/CardOrder";
-import { Header } from "@/app/components/Header";
+import { CardOrder } from "@/app/components/Cards/CardOrder";
+import { Header } from "@/app/components/Sections/Header";
 
 export default function OrdersPage() {
   return (
