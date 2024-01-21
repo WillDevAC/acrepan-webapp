@@ -8,6 +8,7 @@ import { useRouter } from "next/navigation";
 import Cookies from "js-cookie";
 
 import { toast } from "sonner";
+import Swal from "sweetalert2";
 
 interface IAddCartProps {
   name: string;
@@ -91,8 +92,14 @@ export function AddCart({
     }
 
     Cookies.set("cart", JSON.stringify(existingCartItems));
+    Swal.fire({
+      title: "Produto adicionado!",
+      confirmButtonColor: "#EAA85C",
+      confirmButtonText: "Ok, continuar!",
+      inputAutoFocus: false,
+      icon: "success",
+    });
     router.replace("/home/view/my-cart");
-    toast.success("Produto adicionado ao carrinho.");
   };
 
   return (

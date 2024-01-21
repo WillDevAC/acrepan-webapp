@@ -1,6 +1,5 @@
 "use client";
 
-import { useRouter } from "next/router";
 import { Button } from "./components/Button";
 
 import Cookies from "js-cookie";

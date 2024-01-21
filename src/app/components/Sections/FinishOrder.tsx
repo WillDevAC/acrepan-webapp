@@ -4,15 +4,19 @@ import { formatPrice } from "@/utils/functions";
 
 import { toast } from "sonner";
 
+import Cookie from "js-cookie";
+
 interface IFinishOrderFooterProps {
   total: number;
 }
-
+ 
 export function FinishOrderFooter({ total }: IFinishOrderFooterProps) {
   const FinishOrder = () => {
-    const cart_items = localStorage.getItem("cart") || "0";
+    const cart_items = Cookie.get("cart") || "0";
 
     const cartObject = JSON.parse(cart_items);
+
+    console.log(cartObject)
 
     if (Object.keys(cartObject).length === 0) {
       toast.info("Seu carrinho está vázio.");
@@ -29,7 +33,7 @@ export function FinishOrderFooter({ total }: IFinishOrderFooterProps) {
         <p>{formatPrice(total.toString())}</p>
       </div>
       <button
-        className="bg-red-600 p-2 text-white w-28 rounded"
+        className="bg-[#EAA85C] p-2 text-black w-28 rounded"
         onClick={() => FinishOrder()}
       >
         Continuar
