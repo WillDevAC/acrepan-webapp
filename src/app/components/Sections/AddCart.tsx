@@ -103,7 +103,7 @@ export function AddCart({
   };
 
   return (
-    <div className="absolute bottom-0 border w-full h-16 flex items-center justify-between pr-5 pl-5">
+    <div className="absolute bottom-0 bg-white border w-full h-16 flex items-center justify-between pr-5 pl-5">
       {selectedItem === "atacado" && (
         <>
           <div className="flex items-center gap-5">

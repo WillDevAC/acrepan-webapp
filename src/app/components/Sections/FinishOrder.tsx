@@ -27,7 +27,7 @@ export function FinishOrderFooter({ total }: IFinishOrderFooterProps) {
   };
 
   return (
-    <div className="fixed bottom-0 border w-full h-16 flex items-center justify-between pr-5 pl-5">
+    <div className="fixed bg-white bottom-0 border w-full h-16 flex items-center justify-between pr-5 pl-5">
       <div className="flex items-center gap-2">
         <b>Total: </b>
         <p>{formatPrice(total.toString())}</p>
