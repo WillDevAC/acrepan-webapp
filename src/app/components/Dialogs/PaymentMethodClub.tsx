@@ -8,8 +8,9 @@ import { PaymentMethodsClub } from "../Sections/PaymentMethodsClub";
 
 import { toast } from "sonner";
 
-import api from "@/services/api";
 import { BeatLoader } from "react-spinners";
+
+import api from "@/services/api";
 
 interface IPaymentMethodClubProps {
   selectedPlan: any;
@@ -49,8 +50,9 @@ export function PaymentMethodClub({
       );
 
       if (response.data.paymentUrl) {
-        window.open(response.data.paymentUrl, "_blank", "noopener noreferrer");
+        window.location.href = response.data.paymentUrl;
       }
+
     } catch (error) {
       toast.error("Falha em se inscrever no clube.");
     } finally {
