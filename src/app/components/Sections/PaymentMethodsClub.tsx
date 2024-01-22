@@ -24,7 +24,7 @@ export function PaymentMethodsClub({
                 checked ? "border-2 border-[#EAA85C]" : ""
               }`}
             >
-              <img src="/pix.webp" alt="Pix" />
+              <img src="/pix.webp" alt="Pix" className="max-w-7"/>
               <p className="font-bold">Pix</p>
             </div>
           </>
@@ -38,7 +38,7 @@ export function PaymentMethodsClub({
                 checked ? "border-2 border-[#EAA85C]" : ""
               }`}
             >
-              <img src="/boleto.png" alt="Boleto" />
+              <img src="/boleto.png" alt="Boleto" className="max-w-7" />
               <p className="font-bold">Boleto</p>
             </div>
           </>
