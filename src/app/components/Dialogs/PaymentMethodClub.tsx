@@ -50,10 +50,17 @@ export function PaymentMethodClub({
       );
 
       if (response.data.paymentUrl) {
-        var newTab = window.open("", "_blank");
-        if (newTab) {
-          newTab.location.href = response.data.paymentUrl;
-        }
+        var link = document.createElement("a");
+        link.href = response.data.paymentUrl;
+        link.target = "_blank";
+
+        var clickEvent = new MouseEvent("click", {
+          bubbles: true,
+          cancelable: true,
+          view: window,
+        });
+
+        link.dispatchEvent(clickEvent);
       }
     } catch (error) {
       toast.error("Falha em se inscrever no clube.");
