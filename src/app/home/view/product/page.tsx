@@ -96,7 +96,7 @@ export default function ViewProductPage() {
           placeholder="Informe aqui suas observações"
           onChange={handleObservationsChange}
         />
-        <br/><br/><br/>
+        <br/><br/>
       </div>
       <AddCart
         price={
