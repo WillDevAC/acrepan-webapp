@@ -97,8 +97,16 @@ export default function ViewProductPage() {
           onChange={handleObservationsChange}
         />
         <div className="flex items-center gap-2">
-          <h1 className="font-bold">eae</h1>
+          <MessageSquareText />
+          <h1 className="font-bold">Observações</h1>
         </div>
+        <textarea
+          rows={4}
+          cols={50}
+          className="bg-gray-200 rounded p-5 text-gray-500"
+          placeholder="Informe aqui suas observações"
+          onChange={handleObservationsChange}
+        />
       </div>
       <AddCart
         price={
