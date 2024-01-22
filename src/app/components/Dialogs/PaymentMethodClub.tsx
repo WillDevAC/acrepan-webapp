@@ -52,7 +52,7 @@ export function PaymentMethodClub({
         window.open(response.data.paymentUrl, "_blank", "noopener noreferrer");
       }
     } catch (error) {
-      toast.error("Falha em se inscrever no plano.");
+      toast.error("Falha em se inscrever no clube.");
     } finally {
       setLoading(false);
     }
