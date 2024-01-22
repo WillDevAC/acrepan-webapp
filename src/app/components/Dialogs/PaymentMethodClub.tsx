@@ -49,7 +49,10 @@ export function PaymentMethodClub({
       );
 
       if (response.data.paymentUrl) {
-        window.open(response.data.paymentUrl, "_blank");
+        const a = document.createElement("a");
+        a.setAttribute("href", response.data.paymentUrl);
+        a.setAttribute("target", "_blank");
+        a.click();
         //redireciona usuário para pagina de aguardando pagamento
       }
     } catch (error) {
