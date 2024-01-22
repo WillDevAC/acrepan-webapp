@@ -92,12 +92,10 @@ export default function ViewProductPage() {
         <textarea
           rows={4}
           cols={50}
-          className="bg-gray-200 rounded p-5 text-gray-500"
+          className="bg-gray-200 rounded p-5 mb-5 text-gray-500"
           placeholder="Informe aqui suas observações"
           onChange={handleObservationsChange}
         />
-        <br />
-        <br />
       </div>
       <AddCart
         price={
