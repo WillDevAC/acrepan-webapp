@@ -1,9 +1,9 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Header } from "@/app/components/Sections/Header";
+import { Header } from "@/app/components/Header";
 import { Minus, Plus } from "lucide-react";
-import { FinishOrderFooter } from "@/app/components/Sections/FinishOrder";
+import { FinishOrderFooter } from "@/app/components/FinishOrder";
 
 import Cookies from "js-cookie";
 

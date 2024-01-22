@@ -1,7 +1,7 @@
 "use client";
 
-import { AddCart } from "@/app/components/Sections/AddCart";
-import { Header } from "@/app/components/Sections/Header";
+import { AddCart } from "@/app/components/AddCart";
+import { Header } from "@/app/components/Header";
 import { MessageSquareText, Receipt } from "lucide-react";
 import { useSearchParams } from "next/navigation";
 import { formatPrice } from "@/utils/functions";
@@ -90,7 +90,7 @@ export default function ViewProductPage() {
           <h1 className="font-bold">Observações</h1>
         </div>
         <textarea
-          rows={5}
+          rows={4}
           cols={50}
           className="bg-gray-200 rounded p-5 text-gray-500"
           placeholder="Informe aqui suas observações"

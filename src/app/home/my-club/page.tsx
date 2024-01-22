@@ -1,5 +1,8 @@
-import { Header } from "@/app/components/Sections/Header";
+import { Header } from "@/app/components/Header";
+import { Clubs } from "@/app/components/Sections/Clubs";
 import { Gem, Gift } from "lucide-react";
+import { Suspense } from "react";
+import { Loading } from "@/app/components/Loading";
 
 export default function OrdersPage() {
   return (
@@ -21,12 +24,9 @@ export default function OrdersPage() {
           <span>Presentes do clube!</span>
         </section>
       </div>
-      <div className="flex w-full p-5 flex-col gap-2">
-        <h1 className="font-bold">Pode entrar e aproveitar</h1>
-      </div>
-      <div className="flex w-full pr-5 pl-5">
-        
-      </div>
+      <Suspense fallback={<Loading />}>
+        <Clubs />
+      </Suspense>
     </>
   );
 }

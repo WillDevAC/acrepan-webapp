@@ -1,4 +1,4 @@
-import { Header } from "@/app/components/Sections/Header";
+import { Header } from "@/app/components/Header";
 import { CircleDollarSign, MapPin, Store } from "lucide-react";
 
 export default function ViewOrder() {

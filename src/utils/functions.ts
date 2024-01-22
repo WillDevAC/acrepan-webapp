@@ -7,3 +7,16 @@ export const formatPrice = (price: string | null) => {
     maximumFractionDigits: 2,
   });
 };
+
+export function formatDate(dateString: any) {
+  const options: Intl.DateTimeFormatOptions = {
+    day: "2-digit",
+    month: "2-digit",
+    year: "numeric",
+  };
+  const formattedDate = new Date(dateString).toLocaleDateString(
+    "pt-BR",
+    options
+  );
+  return formattedDate;
+}
