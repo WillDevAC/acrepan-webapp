@@ -49,11 +49,7 @@ export function PaymentMethodClub({
       );
 
       if (response.data.paymentUrl) {
-        const a = document.createElement("a");
-        a.setAttribute("href", response.data.paymentUrl);
-        a.setAttribute("target", "_blank");
-        a.click();
-        //redireciona usuário para pagina de aguardando pagamento
+        window.open(response.data.paymentUrl, "_blank", "noopener noreferrer");
       }
     } catch (error) {
       toast.error("Falha em se inscrever no plano.");
