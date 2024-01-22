@@ -96,7 +96,9 @@ export default function ViewProductPage() {
           placeholder="Informe aqui suas observações"
           onChange={handleObservationsChange}
         />
-        <br/><br/>
+        <div className="flex items-center gap-2">
+          <h1 className="font-bold">eae</h1>
+        </div>
       </div>
       <AddCart
         price={
