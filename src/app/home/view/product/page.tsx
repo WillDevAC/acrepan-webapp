@@ -34,8 +34,8 @@ export default function ViewProductPage() {
         <Image
           src={searchParams.get("image") || "#"}
           alt="Product Image"
-          width={50}
-          height={50}
+          width={200}
+          height={200}
           className="object-contain w-full h-full"
         />
       </div>
