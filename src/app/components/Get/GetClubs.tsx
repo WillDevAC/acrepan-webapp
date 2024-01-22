@@ -39,7 +39,7 @@ export function GetClubs({ plans, count }: Clubs) {
           />
         ))}
 
-        <div className="pt-5">
+        <div className="pt-5 mb-5">
           <Button onClick={() => setIsOpen(true)}>
             Participar do clube
           </Button>
